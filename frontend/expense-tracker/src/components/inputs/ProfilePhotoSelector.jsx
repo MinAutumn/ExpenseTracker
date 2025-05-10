@@ -67,4 +67,4 @@ const ProfilePhotoSelector = ({image, setImage}) => {
   )
 }
 
-export default ProfilePhotoSelector
+export default ProfilePhotoSelector;
