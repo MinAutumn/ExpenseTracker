@@ -25,30 +25,8 @@ const CustomPieChart = ({ data, label, totalAmount, colors, showTextAnchor }) =>
             <Tooltip content={<CustomTooltip />} />
             <Legend content={<CustomLegend />} />
 
-            <text
-              x="50%"
-              y="50%"
-              dy={-25}
-              textAnchor="middle"
-              fill="#666"
-              fontSize="14px"
-            >
-              {label}
-            </text>
-            <text
-              x="50%"
-              y="50%"
-              dy={8}
-              textAnchor="middle"
-              fill="#333"
-              fontSize="24px"
-              fontWeight="semi-bold"
-            >
-              {totalAmount}
-            </text>
-
-            {/* This section is not working yet {showTextAnchor && (
-              <>
+            {showTextAnchor && (
+              <g>
                 <text
                   x="50%"
                   y="50%"
@@ -70,8 +48,8 @@ const CustomPieChart = ({ data, label, totalAmount, colors, showTextAnchor }) =>
                 >
                   {totalAmount}
                 </text>
-              </>
-            )} */}
+              </g>
+            )}
         </PieChart>
     </ResponsiveContainer>
   )
