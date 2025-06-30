@@ -1,7 +1,7 @@
 
 # Deployed using netlify
 You can check this project from the link below
-https://expense-tracker-mrk.netlify.app/login
+https://expense-tracker-mrk.netlify.app
 
 ## Available Scripts
 
